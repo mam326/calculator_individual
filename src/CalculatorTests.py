@@ -17,12 +17,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 0)
 
     def test_add_method_calculator(self):
-        print("starting addition test")
         self.assertEqual(self.calculator.add(2, 2), 4)
         self.assertEqual(self.calculator.result, 4)
         test_data = getFileData("/src/addition.csv")
         for row in test_data:
-            print(row)
             value1 = int(row[0])
             value2 = int(row[1])
             result = int(row[2])

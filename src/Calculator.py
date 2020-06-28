@@ -19,7 +19,7 @@ def square(a):
     return a * a
 
 def sqrt(a):
-    return math.sqrt(a)
+    return round(math.sqrt(a), 9)
 
 ##Calculator Class with calculation methods
 
