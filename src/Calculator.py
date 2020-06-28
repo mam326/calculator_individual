@@ -1,5 +1,7 @@
 import math
 
+##Arithmetic Calculator Functions
+
 def addition(a, b):
     return a + b
 
@@ -17,6 +19,8 @@ def square(a):
 
 def sqrt(a):
     return math.sqrt(a)
+
+##Calculator Class with calculation methods
 
 class Calculator:
     result = 0
