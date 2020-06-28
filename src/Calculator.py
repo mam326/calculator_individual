@@ -12,7 +12,7 @@ def multiplication(a, b):
     return a * b
 
 def division(a, b):
-    return a / b
+    return round(a / b, 9)
 
 def square(a):
     return a * a

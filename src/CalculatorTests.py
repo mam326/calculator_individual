@@ -65,7 +65,7 @@ class MyTestCase(unittest.TestCase):
             value1 = float(row[0])
             value2 = float(row[1])
             result = float(row[2])
-            self.assertEqual(self.calculator.divide(value1, value2), result)
+            self.assertEqual(self.calculator.divide(value2, value1), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_square_method_calculator(self):
@@ -75,7 +75,7 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             value1 = int(row[0])
             result = int(row[1])
-            self.assertEqual(self.calculator.multiply(value1), result)
+            self.assertEqual(self.calculator.square(value1), result)
             self.assertEqual(self.calculator.result, result)
 
     def test_sqrt_method_calculator(self):
