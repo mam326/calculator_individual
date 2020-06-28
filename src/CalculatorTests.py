@@ -81,6 +81,12 @@ class MyTestCase(unittest.TestCase):
     def test_sqrt_method_calculator(self):
         self.assertEqual(self.calculator.sqrt(64), 8)
         self.assertEqual(self.calculator.result, 8)
+        test_data = getFileData("/src/sqrt.csv")
+        for row in test_data:
+            value1 = float(row[0])
+            result = float(row[1])
+            self.assertEqual(self.calculator.sqrt(value1), result)
+            self.assertEqual(self.calculator.result, result)
 
 if __name__ == '__main__':
     unittest.main()
