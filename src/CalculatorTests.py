@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
     def test_add_method_calculator(self):
         self.assertEqual(self.calculator.add(2, 2), 4)
         self.assertEqual(self.calculator.result, 4)
-        test_data = CsvReader("addition.csv").data
+        test_data = CsvReader("/src/addition.csv").data
         for row in test_data:
             value1 = int(row['Value 1'])
             value2 = int(row['Value 2'])
