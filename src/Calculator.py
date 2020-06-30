@@ -1,25 +1,33 @@
 import math
 
 ##Arithmetic Calculator Functions
+#Following Video, Alternate Method
 
 def addition(a, b):
-    return a + b
+    return float(a) + float(b)
 
 def subtraction(a, b):
-    return a - b
+    a = float(a)
+    b = float(b)
+    c = a - b
+    return c
 
 def multiplication(a, b):
-    return a * b
+    return float(a) * float(b)
 
 def division(a, b):
-    return round(a / b, 9)
-
+    c - float(b) / float(a)
+    limited_float - round(c, 9)
+    return limited_float
 
 def square(a):
-    return a * a
+    return float(a) * float(a)
 
 def sqrt(a):
-    return round(math.sqrt(a), 9)
+    x = float(a)
+    y = math.sqrt(x)
+    limited_float1 = round(y, 9)
+    return limited_float1
 
 ##Calculator Class with calculation methods
 
