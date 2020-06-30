@@ -71,8 +71,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 4)
         test_data = CsvReader('/src/sqrt2.csv').data
         for row in test_data:
-            self.assertEqual(self.calculator.sqrt(row['Value 1']), float(row['Result']))
-            self.assertEqual(self.calculator.result, float(row['Result']))
+            self.assertAlmostEqual(self.calculator.sqrt(row['Value 1']), float(row['Result']))
+            self.assertAlmostEqual(self.calculator.result, float(row['Result']))
 
 
 if __name__ == '__main__':
