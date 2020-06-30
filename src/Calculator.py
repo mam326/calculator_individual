@@ -9,7 +9,7 @@ def addition(a, b):
 def subtraction(a, b):
     a = float(a)
     b = float(b)
-    c = a - b
+    c = b - a
     return c
 
 def multiplication(a, b):
