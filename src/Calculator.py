@@ -16,8 +16,8 @@ def multiplication(a, b):
     return float(a) * float(b)
 
 def division(a, b):
-    c - float(b) / float(a)
-    limited_float - round(c, 9)
+    c = float(b) / float(a)
+    limited_float = round(c, 9)
     return limited_float
 
 def square(a):
@@ -26,7 +26,7 @@ def square(a):
 def sqrt(a):
     x = float(a)
     y = math.sqrt(x)
-    limited_float1 = round(y, 9)
+    limited_float1 = round(y, 8)
     return limited_float1
 
 ##Calculator Class with calculation methods
